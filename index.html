@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sliding Puzzle BD</title>
+<meta name="description" content="Sliding Puzzle BD &#8212; offline bilingual sliding tile puzzle. 3x3, 4x4 and 5x5 boards, every shuffle guaranteed solvable.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div>
+    <h1 id="title">Sliding Puzzle BD</h1>
+    <p id="tagline" class="tagline"></p>
+  </div>
+  <button id="langBtn" type="button" class="lang-btn"></button>
+</header>
+
+<main class="wrap">
+  <section class="controls" aria-label="Game controls">
+    <div class="control-row">
+      <span id="sizeLabel" class="control-label"></span>
+      <div class="size-group" role="group">
+        <button id="size3Btn" type="button" class="size-btn" data-size="3"></button>
+        <button id="size4Btn" type="button" class="size-btn" data-size="4"></button>
+        <button id="size5Btn" type="button" class="size-btn" data-size="5"></button>
+      </div>
+    </div>
+    <button id="newGameBtn" type="button" class="primary"></button>
+  </section>
+
+  <section class="stats" aria-label="Score">
+    <div class="stat"><span id="movesLabel" class="stat-label"></span><strong id="movesVal">0</strong></div>
+    <div class="stat"><span id="timeLabel" class="stat-label"></span><strong id="timeVal">0:00</strong></div>
+    <div class="stat"><span id="bestLabel" class="stat-label"></span><strong id="bestVal">&#8212;</strong></div>
+  </section>
+
+  <section id="winBanner" class="win" hidden>
+    <h2 id="winTitle"></h2>
+    <p id="winDetail"></p>
+    <p id="winBest" class="win-best" hidden></p>
+    <button id="playAgainBtn" type="button" class="primary"></button>
+  </section>
+
+  <section class="board-wrap">
+    <div id="board" class="board" role="grid" aria-label="Sliding puzzle board"></div>
+  </section>
+
+  <section class="preview">
+    <span id="solvedLabel" class="control-label"></span>
+    <div id="solvedPreview" class="mini-row"></div>
+  </section>
+
+  <section class="how">
+    <h2 id="howTitle"></h2>
+    <ul>
+      <li id="how1"></li>
+      <li id="how2"></li>
+      <li id="how3"></li>
+    </ul>
+  </section>
+</main>
+
+<footer id="footer" class="footer"></footer>
+
+<script src="js/logic.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

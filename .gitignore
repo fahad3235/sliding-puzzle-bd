@@ -1,0 +1,5 @@
+# Local tooling / OS artefacts (never pushed as secrets or binaries)
+.DS_Store
+Thumbs.db
+*.log
+node_modules/
