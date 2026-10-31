@@ -57,4 +57,6 @@ solely for this smoke suite and is documented here; it changes no gameplay.
 
 - Repo: https://github.com/fahad3235/sliding-puzzle-bd (PUBLIC)
 - Live site: https://fahad3235.github.io/sliding-puzzle-bd/ (GitHub Pages,
-  main branch, root — verified below at publish time)
+  main branch, root — verified 2026-10-31 ~18:20 +06: HTTP 200 after the
+  build finished, live index.html byte-identical to local, live js/css
+  all 200, Bengali escapes intact)
